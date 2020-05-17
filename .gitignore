@@ -1,0 +1,4 @@
+bazel-bin
+bazel-lombok-idea-val-bug
+bazel-out
+bazel-testlogs
