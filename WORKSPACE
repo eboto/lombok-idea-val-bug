@@ -15,8 +15,6 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 
 maven_install(
     artifacts = [
-        "junit:junit:4.12",
-        "com.google.guava:guava:28.0-jre",
         "org.projectlombok:lombok:jar:1.18.12"
     ],
     fetch_sources = True,

@@ -25,7 +25,6 @@ java_library(
     name = "lombok-idea-val-bug-lib",
     srcs = glob(["src/main/java/com/example/myproject/*.java"]),
     deps = [
-        "@maven//:com_google_guava_guava",
         ":lombok"
     ],
 )

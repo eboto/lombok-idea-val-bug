@@ -1,28 +1,5 @@
-Maven Java application
-----------------------
+Demonstrates issue https://github.com/mplushnikov/lombok-intellij-plugin/issues/802
 
-This project demonstrates the usage of Bazel to retrieve dependencies from Maven
-repositories.
+To see the visual error, go to: src/main/java/com/example/myproject/App.java
 
-To build this example, you will need to [install
-Bazel](http://bazel.io/docs/install.html).
-
-The Java application makes use of a library in
-[Guava](https://github.com/google/guava), which is downloaded from a remote
-repository using Maven.
-
-This application demonstrates the usage of
-[`rules_jvm_external`](https://github.com/bazelbuild/rules_jvm_external/) to
-configure dependencies. The dependencies are configured in the `WORKSPACE` file.
-
-Build the application by running:
-
-```
-$ bazel build :java-maven
-```
-
-Test the application by running:
-
-```
-$ bazel test :tests
-```
+To see that lombok itself has no issue with the code, run `./demonstrate-successful-build.sh` (docker required)
